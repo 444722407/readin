@@ -199,7 +199,7 @@ body{
     color: #0D0D0D;
 }
 .menu_box .my_links .item .icon{
-    width: 0.56rem;height: 0.56rem;
+    width: 0.56rem;height: 0.56rem;margin-bottom: 0.16rem;
 }
 .menu_box .my_links .icon_read{
     background: url(../images/sidebar_icon_record@2x.png) no-repeat center /100% 100%;
@@ -311,6 +311,7 @@ body{
     margin-left: 0.2667rem;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 .type_rank .book_img_wrap{
     width: 1.4667rem;position:relative;
@@ -360,12 +361,15 @@ body{
 
 .type1 .book_item{
     display: flex;
+    width: 100%;
 }
 .type1 .book_aside{
     position: relative;
     margin-left: 0.2667rem;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    overflow: hidden;
 }
 .type1 .book_rating{
     position: absolute;
@@ -383,7 +387,9 @@ body{
 }
 .type1 .book_name{
     font-size: 0.3733rem;font-weight: bold;
-    max-width: 4.5rem;
+    word-break:break-all;
+    padding-right: 0.8rem;
+
 }
 .type1 .book_author{
     font-size:0.2933rem;color: #666;
@@ -426,7 +432,18 @@ body{
     padding: 1px 4px;
     margin-top: 0.5333rem;
 }
-
+.type1 .book_time{
+    font-size: 0.32rem;color: #999;margin-top: 0.1333rem;
+}
+.type1 .book_action{
+    align-self:flex-start;
+    font-size: 0.3467rem;color: #FA9404;border: 1px solid #FA9404;
+    margin-top:0.1333rem;
+    padding: 0 0.44rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-radius: 0.8rem;
+}
 
 .swiper{
     width: 100%;
@@ -742,6 +759,7 @@ body{
     width: 2.24rem;height: 0.5867rem;
     background: url(../images/list_bg_more@2x.png) no-repeat center /100% 100%;
     margin: 0 auto;
+    font-size: 12px;
 }
 .category .category_btn .icon_arrow{
     width: 0.2933rem;height: 0.1867rem;
@@ -813,6 +831,7 @@ body{
 .book_detail .book_name{
     font-size: 0.48rem;
     max-width: 6rem;
+    padding-right: 0;
 }
 .book_detail .book_author{
    margin-top: 0.2667rem;
@@ -1140,8 +1159,63 @@ body{
     bottom: auto;
     box-shadow: 0px 2px 0 0 rgb(0,0,0,.1);
 }
-.change_type_head{
+.record .book_name{
+    padding-right: 0;
+}
 
+.lock_mask{
+    position: relative;
+}
+.lock_mask::before{
+    content: "";
+    position: absolute;
+    top: -1.3333rem;
+    width: 100%;
+    height: 1.3333rem;
+    background:-webkit-gradient(linear,left top, left bottom,from(rgba(255,255,255,.75)),to(rgba(255,255,255,1)));
+    background:-webkit-linear-gradient(top,rgba(255,255,255,.75),rgba(255,255,255,1));
+    background:-moz-linear-gradient(top,rgba(255,255,255,.75),rgba(255,255,255,1));
+    background:-o-linear-gradient(top,rgba(255,255,255,.75),rgba(255,255,255,1));
+    background:linear-gradient(to bottom,rgba(255,255,255,.75),rgba(255,255,255,1));
+}
+.lock_mask .lock{
+    height: 3.6667rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.lock_mask .lock .t{
+    color: #F02F22;font-size:0.4rem;font-weight: normal;
+}
+.lock_mask .lock .go_lock{
+    font-size: 0.4rem;
+    color: #121212;
+    margin-top:0.4rem;
+    height: 1.1733rem;
+    border-radius: 0.6667rem;
+    background:linear-gradient(to bottom,#FFE153,#FFD53E);
+    width: 6rem;
+    text-align: center;
+    line-height:1.1733rem;
 }
 /*电脑访问优化*/
 @media only screen and (min-width: 1024px){
