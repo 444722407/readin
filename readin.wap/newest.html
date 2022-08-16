@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="keywords" content="Read,read free novels,free novels reading,read online novels,read werewolf novels,romance novels,science fiction,online reading">
+    <meta name="description" content="Readin  provides a large number of popular online novels,and it's free to read. These novels cover various genres, such as romance, suspense,fantasy,science fiction, etc. You can read the latest and most popular novels here">
+    <title>Readin - Online reading,free novels</title>
+    <script>
+        !function (a, b) { function c() { var b = f.getBoundingClientRect().width; b / i > 540 && (b = 540 * i); var c = b / 10; f.style.fontSize = c + "px", k.rem = a.rem = c } var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'), h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {}); if (g) { console.warn("将根据已有的meta标签来设置缩放比例"); var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/); l && (j = parseFloat(l[1]), i = parseInt(1 / j)) } else if (h) { var m = h.getAttribute("content"); if (m) { var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/); n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2))) } } if (!i && !j) { var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)), q = a.devicePixelRatio; i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i } if (f.setAttribute("data-dpr", i), !g) if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + 1 + ", maximum-scale=" + 1 + ", minimum-scale=" + 1 + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g); else { var r = e.createElement("div"); r.appendChild(g), e.write(r.innerHTML) } a.addEventListener("resize", function () { clearTimeout(d), d = setTimeout(c, 300) }, !1), a.addEventListener("pageshow", function (a) { a.persisted && (clearTimeout(d), d = setTimeout(c, 300)) }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () { e.body.style.fontSize = 12 * i + "px" }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) { var b = parseFloat(a) * this.rem; return "string" == typeof a && a.match(/rem$/) && (b += "px"), b }, k.px2rem = function (a) { var b = parseFloat(a) / this.rem; return "string" == typeof a && a.match(/px$/) && (b += "rem"), b } }(window, window.lib || (window.lib = {}));
+    </script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="back_header">
+       <a href="javascript:history.back()" class="back"></a>
+        <a href="./search.html" class="search"></a>
+        <h1 class="title">最近更新</h1>
+        <div class="menu">
+            <button class="icon icon_menu show_menu"></button>
+            <div class="menu_box">
+                <div class="menu_mask" style="display: none;"></div>
+                <div class="menu_mask_body close">
+                    <button class="close_menu"></button>
+                    <div class="no_login_hd">
+                        <div class="cell">
+                            <div class="avatar_wrap">
+                                <img src="./images/sidebar_icon_star@2x.png" alt="" class="avatar">
+                            </div>
+                            <div class="hd_aside">
+                                <p class="hd_title">点这里登录</p>
+                                <p class="hd_desc">登录后查看更多信息</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yes_login_hd" style="display: none;">
+                        <div class="cell">
+                            <div class="avatar_wrap">
+                                <img src="./images/avatar.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="hd_aside">
+                                <p class="hd_title">Jefferson·Clinton</p>
+                                <p class="hd_desc">534746046@qq.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="my_links">
+                            <a href="#" class="item"><i class="icon icon_read"></i>阅读记录</a>
+                            <a href="#" class="item"><i class="icon icon_fav"></i>我的收藏</a>
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <a href="./index.html" class="item">主页 <i class="icon icon_arrow"></i></a>
+                        <a href="./type.html" class="item">故事类型 <i class="icon icon_arrow"></i></a>
+                        <a href="./newest.html" class="item">最近更新 <i class="icon icon_arrow"></i></a>
+                        <a href="./end.html" class="item">完结小说 <i class="icon icon_arrow"></i></a>
+                    </div>
+
+                    <div class="quit_login" style="display:none;">sign out</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="box newest_box">
+        <ul class="book_list type1">
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="ad">
+                <img src="https://fakeimg.pl/670x272/">
+            </li>
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="book_item">
+                <a class="book_img_wrap" href="./detail.html">
+                    <p class="book_badge">完结</p>
+                    <img data-original="./images/book.png" alt="" class="book_img">
+                </a>
+                <div class="book_aside">
+                    <p class="book_rating">9.5</p>
+                    <a class="book_name over_lines1" href="../detail.html">The RomanceOf Mr.Walton RomanceOf RomanceOf</a>
+                    <a class="book_author" href="../detail.html">作者: dragonlibran</a>
+                    <a class="book_desc over_lines3" href="../detail.html">recently three months，always have I got a miracle doctor, and I started RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf RomanceOf</a>
+                    <p class="book_chapter">
+                        <span class="chapter">更新至第456章</span>
+                        <span class="time">5分钟前</span>
+                    </p>
+                </div>
+            </li>
+            <li class="ad">
+                <img src="https://fakeimg.pl/670x272/">
+            </li>
+        </ul>
+    </section>
+    <section class="toast"></section>
+    <section class="mask" style="display: none;"></section>
+    <section class="mask_login" style="display: none;">
+        <i class="icon_close icon"></i>
+        <div class="login_label">
+            <p class="hd login_head active" data-index="0" >登录</p>
+            <p class="line"></p>
+            <p class="hd login_register" data-index="1">注册</p>
+        </div>
+        
+        <form action="">
+            <div class="bd login_input">
+                <div class="input_cell">
+                    <input type="text" name="" id="login_email" class="input_email" placeholder="用户名/邮箱">
+                    <i class="icon_clear"></i>
+                </div>
+                <div class="tips" style="display: none;">
+                    <p class="tips_text">用户名或密码不正确！</p>
+                </div>
+                <div class="input_cell">
+                    <input type="password" name="" id="login_password" class="input_password" placeholder="密码">
+                    <i class="icon_eyes"></i>
+                </div>
+                <div class="input_cell">
+                    <button type="submit" class="login_submit btn">登录</button>
+                </div>
+                <div class="text">
+                    登录即表示您同意  <a href="#" class="jump">“用户协议”</a>和<a href="#" class="jump">“隐私政策”</a>
+                </div>
+            </div>
+
+
+            <div class="bd register_input" style="display: none;">
+                <div class="input_cell">
+                    <input type="text" name="" id="register_email" class="input_email" placeholder="用户名/邮箱">
+                </div>
+                <div class="tips" style="display: none;">
+                    <p class="tips_text">用户名或密码不正确！</p>
+                </div>
+                <div class="input_cell">
+                    <input type="text" name="" id="register_password" class="input_password" placeholder="密码">
+                    <i class="icon_eyes icon_eyes_active"></i>
+                </div>
+                <div class="input_cell">
+                    <button type="submit" class="register_submit btn">注册</button>
+                </div>
+                <div class="text">
+                    注册即表示您同意  <a href="#" class="jump">“用户协议”</a>和<a href="#" class="jump">“隐私政策”</a>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+  
+
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery.lazyload.min.js"></script>
+    <script src="./js/click.js"></script>
+</body>
+
+</html>
