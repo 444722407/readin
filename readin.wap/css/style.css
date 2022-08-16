@@ -97,19 +97,27 @@ body{
     position: relative;
 }
 .header .search .input{
-    width: 4.8267rem;
+    width: 4.9333rem;
     height: 0.8533rem;
     border-radius: 0.8533rem;
     font-size: 0.32rem;
     color: #fff;
-    padding: 0 0.1333rem 0 0.8533rem;
+    padding: 0 0.8533rem;
     box-sizing: border-box;
     background-color: #2E2E2E;
+}
+.header .search .icon_clear{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 0.8533rem;height: 0.8533rem;
+    background: url(../images/search_icon_close@2x.png) no-repeat center /0.4533rem 0.4533rem;
 }
 .header .search .input::-webkit-input-placeholder{
     color: #666;
 }
 .header .search .icon_search{
+    display: inline-block;
     position: absolute;
     left: 0;
     top: 0;
@@ -623,6 +631,7 @@ body{
     background: url(../images/layer_icon_eye_open@2x.png) no-repeat center / 0.5333rem 0.3733rem;
 }
 .mask_login .input_cell .icon_clear{
+    display: none;
     position: absolute;
     cursor: pointer;
     right: 0;
@@ -795,6 +804,7 @@ body{
     background: url(../images/index_icon_search@2x.png) no-repeat center /100% 100%;
 }
 .search_input .icon_clear{
+    display: none;
     position: absolute;
     right: 0;
     width: 0.8533rem;height: 0.8533rem;

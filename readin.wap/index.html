@@ -24,7 +24,8 @@
         <form action="./search.html">
             <div class="search">
                 <button type="submit" class="icon icon_search"></button>
-                <input type="text" placeholder="关键词、书名、作者名" class="input"/>
+                <input type="text" placeholder="关键词、书名、作者名" class="input entry_search"/>
+                <i class="icon icon_clear"></i>
             </div>
         </form>
         <div class="menu">
@@ -460,7 +461,7 @@
         <form action="">
             <div class="bd login_input">
                 <div class="input_cell">
-                    <input type="text" name="" id="login_email" class="input_email" placeholder="用户名/邮箱">
+                    <input type="text" name="" id="login_email" class="input_email entry_search" placeholder="用户名/邮箱">
                     <i class="icon_clear"></i>
                 </div>
                 <div class="tips" style="display: none;">
@@ -481,7 +482,7 @@
 
             <div class="bd register_input" style="display: none;">
                 <div class="input_cell">
-                    <input type="text" name="" id="register_email" class="input_email" placeholder="用户名/邮箱">
+                    <input type="text" name="" id="register_email" class="input_email entry_search" placeholder="用户名/邮箱">
                 </div>
                 <div class="tips" style="display: none;">
                     <p class="tips_text">用户名或密码不正确！</p>
@@ -507,6 +508,11 @@
     <script>
         var swiper = new Swiper(".swiper", {
             loop: true,
+            autoplay: {
+                delay: 5000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
             pagination: {
                 clickable:true,
                 el: ".swiper-pagination",

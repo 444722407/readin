@@ -30,9 +30,6 @@ $(function(){
         $('.mask,.mask_login').hide();
         $('.quit_login').hide();
     })
-    $('.icon_clear').click(function(){
-        $(this).siblings('.input_email').val("")
-    })
     // 切换登录 注册 弹窗
     $('.login_label .hd').click(function(){
         var index = $(this).data('index');
@@ -154,5 +151,17 @@ $(function(){
     })
     $('.chapter_list').click(function(){
         $(this).hide()
+    })
+
+    //搜索出现清空按钮
+    $('.entry_search').keyup(function(){
+        var val = $(this).val();
+        if(val!=""){
+            $(this).siblings('.icon_clear').show()
+        }
+    })
+    $('.icon_clear').click(function(){
+        $(this).hide();
+        $(this).siblings('.entry_search').val("");
     })
 })
