@@ -817,6 +817,7 @@ body{
     border-radius: 0.8533rem;
     padding: 0 0.4rem;
     margin-left: auto;
+    margin-right: 0.2667rem;
 }
 .result{
     font-size: 0.4267rem;color: #333333;
@@ -842,9 +843,10 @@ body{
     font-size: 0.48rem;
     max-width: 6rem;
     padding-right: 0;
+    line-height: 1.5;
 }
 .book_detail .book_author{
-   margin-top: 0.2667rem;
+   margin-top: 0.1333rem;
 }
 .book_detail .book_numbers{
    font-size: 0.32rem;color: #9C9CA0;
@@ -853,7 +855,7 @@ body{
     display: flex;
     align-items: center;
     font-size: 0.32rem;
-    margin-top: 0.16rem;
+    /* margin-top: 0.16rem; */
 } 
 .book_detail .book_rating_bt .lf{
     display: flex;
@@ -931,31 +933,31 @@ body{
     border-radius: 0.8rem;
     margin-right: 0.4rem;
 }
-.chapter_list{
+.chapter_list_detail{
     padding: 0.5333rem;
     background-color: #fff;
 }
-.chapter_list .list_hd{
+.chapter_list_detail .list_hd{
     display: flex;
     align-items: center;
 }
-.chapter_list .list_hd .t{
+.chapter_list_detail .list_hd .t{
     font-size: 0.4533rem;color: #15161A;font-weight: bold;
 }
-.chapter_list .list_hd .s{
+.chapter_list_detail .list_hd .s{
     font-size: 0.3733rem;color: #9C9CA0;margin-left: 0.2267rem;
 }
-.chapter_list .list_hd .rt{
+.chapter_list_detail .list_hd .rt{
     margin-left: auto;
     display: flex;
     align-items: center;
 }
-.chapter_list .list_hd .icon_asc{
+.chapter_list_detail .list_hd .icon_asc{
     width: 0.2667rem;height: 0.2933rem;
     background: url(../images/details_icon_just@2x.png) no-repeat center /100% 100%;
     margin-right: 0.1067rem;
 }
-.chapter_list .list .item{
+.chapter_list_detail .list .item{
     display: block;
     height: 1.4667rem;
     line-height: 1.4667rem;
@@ -1042,7 +1044,7 @@ body{
     align-items: center;
     padding: 0 0.5333rem;
     box-sizing: border-box;
-    z-index: 99999;
+    z-index: 999;
  }
  .detail_footer .fav{
     font-size: 0.3733rem;
@@ -1125,7 +1127,7 @@ body{
  .change_chapter .menu{
     position: relative;
  }
- .chapter_list{
+ .change_chapter .chapter_list{
     display: none;
     position: absolute;
     bottom: 1.4667rem;
@@ -1138,8 +1140,10 @@ body{
     border-top-right-radius: 0.2133rem;
     transform: translate(-50%);
     box-shadow: 0px -2px 0 0 rgb(0,0,0,.1);
+    height: 12rem;
+    overflow-y: auto;
  }
- .chapter_list .item{
+ .change_chapter .chapter_list .item{
     display: block;
     font-size: 0.4rem;
     color: #68696a;
@@ -1152,7 +1156,7 @@ body{
  .chapter_list .item:nth-last-child(1){
     border-bottom:none;
  }
-.change_chapter .active{
+.change_chapter .chapter_list .active{
     color: #ff9205;
 }
 .change_type_head{
@@ -1163,12 +1167,11 @@ body{
     border-top-right-radius: 0;
     border-bottom-left-radius: 0.2133rem;
     border-bottom-right-radius: 0.2133rem;
-}
-.change_type_head .chapter_list{
     top: 1.4667rem;
     bottom: auto;
     box-shadow: 0px 2px 0 0 rgb(0,0,0,.1);
 }
+
 .record .book_name{
     padding-right: 0;
 }

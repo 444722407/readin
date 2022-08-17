@@ -7,24 +7,41 @@ $(function(){
     });
 
     // 显示右侧菜单栏
-    $('.show_menu').click(function(){
-        $('.menu_mask').show();
-        $('.menu_mask_body').removeClass('close');
-        $('body').css({
-            "overflow":"hidden"
-        })
-    })
-    $('.close_menu,.menu_mask').click(function(){
+    function hideMenu(){
         $('.menu_mask').hide();
         $('.menu_mask_body').addClass('close');
         $('body').css({
             "overflow":"visible"
         })
+    }
+    function showMenu(){
+        $('.menu_mask').show();
+        $('.menu_mask_body').removeClass('close');
+        $('body').css({
+            "overflow":"hidden"
+        })
+    }
+    $('.show_menu').click(function(){
+        showMenu()
+    })
+   
+
+    $('.close_menu,.menu_mask').click(function(){
+        hideMenu();
+    })
+
+    // 退出登录
+    $('.quit_login').click(function(){
+        hideMenu();
+        $('.no_login_hd').show();
+        $('.yes_login_hd').hide();
     })
      // 显示 登录 注册 弹窗
      $('.no_login_hd').click(function(){
+        hideMenu()
         $('.mask,.mask_login').show();
     })
+    
      // 关闭 登录 注册 弹窗
     $('.mask_login .icon_close').click(function(){
         $('.mask,.mask_login').hide();
@@ -81,6 +98,7 @@ $(function(){
         $('.no_login_hd').hide();
         $('.yes_login_hd').show();
         $('.quit_login').show();
+        showMenu()
     })
 
     // 粗略验证注册
@@ -114,10 +132,13 @@ $(function(){
         $('.no_login_hd').hide();
         $('.yes_login_hd').show();
         $('.quit_login').show();
+        showMenu()
+        
         $('.toast').text("注册成功");
         $('.toast').show();
         setTimeout(() => {
             $('.toast').hide();
+            $('.toast').text("");
         }, 3000);
     })
 
@@ -142,14 +163,31 @@ $(function(){
 
     // 点击收藏
     $('.detail_footer .fav').click(function(){
-        $(this).addClass('active').find('.fav_text').text('已收藏')
+        $(this).toggleClass('active')
+        if($(this).hasClass('active')){
+            $(this).find('.fav_text').text('已收藏');
+            $('.toast').text("收藏成功");
+            $('.toast').show();
+            setTimeout(() => {
+                $('.toast').hide();
+                $('.toast').text("");
+            }, 3000);
+        }else{
+            $(this).find('.fav_text').text('收藏');
+            $('.toast').text("取消收藏");
+            $('.toast').show();
+            setTimeout(() => {
+                $('.toast').hide();
+                $('.toast').text("");
+            }, 3000);
+        }
     })
 
     // 阅读页
     $('.change_chapter .icon_menu').click(function(){
         $(this).siblings('.chapter_list').toggle()
     })
-    $('.chapter_list').click(function(){
+    $('.change_chapter .chapter_list').click(function(){
         $(this).hide()
     })
 

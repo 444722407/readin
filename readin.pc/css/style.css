@@ -408,7 +408,7 @@ li{
     background-color: #fff;
 }
 .scroll_bar .scroll_item:hover{
-    background-color: #c2c2c2;
+    background-color: #e0e0e0;
 }
 .scroll_bar .scroll_item .icon_top{
     width: 22px;height: 22px;
