@@ -164,4 +164,18 @@ $(function(){
         $(this).hide();
         $(this).siblings('.entry_search').val("");
     })
+     // 个人设置页面头像切换
+     $('.click_file').click(function(){
+        $('.file').click()
+    })
+    $('.file').change(function(e){
+        var file = e.target.files[0];
+        var oFReader = new FileReader();
+        oFReader.readAsDataURL(file);
+        oFReader.onload  = function(oFRevent){
+            var src = oFRevent.target.result;
+           $('.user_avatar').attr('src',src)
+        }
+        
+    })
 })
